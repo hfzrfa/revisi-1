@@ -69,7 +69,7 @@ export const HeroSection = () => {
             </button>
             <button className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 text-white px-4 sm:px-6 h-10 sm:h-12 rounded border border-gray-500 hover:bg-gradient-to-r hover:from-blue-600 hover:via-blue-500 hover:to-blue-400 hover:border-blue-500 transition-all duration-50 ease-in-out flex items-center gap-2 text-sm sm:text-base">
               <span className="animate-bounce">👋</span>
-              <span className="font-semibold">Let's Connect</span>
+              <span className="font-semibold">Lets Connect</span>
             </button>
           </div>
         </div>
