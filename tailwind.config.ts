@@ -32,9 +32,9 @@ const config: Config = {
           '100%': { borderColor: 'rgba(255, 255, 255, 0.15)' },
         },
         blink: {
-          '0%': { opacity: 1 },  // Opacity penuh di awal
-          '50%': { opacity: 0 }, // Opacity ke 0 di tengah
-          '100%': { opacity: 1 }, // Kembali ke opacity penuh
+          '0%': { opacity: '1' },  // Opacity penuh di awal
+          '50%': { opacity: '0' }, // Opacity ke 0 di tengah
+          '100%': { opacity: '1' }, // Kembali ke opacity penuh
         },
       },
       animation: {
