@@ -5,6 +5,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import { SectionHeader } from "@/components/SectionHeader";
 
 const portfolioProjects = [
   {
@@ -16,7 +17,7 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "",
     image: darkSaasLandingPage,
   },
   {
@@ -28,7 +29,7 @@ const portfolioProjects = [
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "",
     image: lightSaasLandingPage,
   },
   {
@@ -40,34 +41,28 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "",
     image: aiStartupLandingPage,
   },
 ];
 
 export const ProjectsSection = () => {
-  return <section className="pb-16  lg:py-24">
+  return <section className="pb-16 lg:py-24">
+    {/* Container Our Portfolio */}
+    <div>
     <div className="container">
-        <div className="flex justify-center ">
-        <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center bg-clip-text text-transparent">
-            Real-world Results
-            </p>
-        </div>
-        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
-            Featured Projects
-            </h2>
-        <p className="text-center md:text-lg lg:text-lg text-white/60 mt-4 max-w-md mx-auto">
-        See how I transformed concepts into engaging digital experience.
-        </p>
-        <div className="mt-10 md:mt-20 flex flex-col gap-20 ">
+      <SectionHeader eyebrow="Real-world Results" title="Our Portfolio Projects" description="See how I transformed concepts into engaging digital experience." /> 
+      </div>
+
+      {/* Container Portfolio Projects */}
+        <div className="container mt-10 md:mt-20 flex flex-col gap-20 ">
             {portfolioProjects.map(project => (
-                <div key={project.title} className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-s-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events-none"
+                <div key={project.title} className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[''] after:absolute after:inset-0 after:-outline-offset-2 after:rounded-s-3xl  px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events- bg-gradient-to-br from-emerald-950/15 via-emerald-600/20 to-emerald-300"
                 >
-                    <div className="absolute inset-0 -z-10 opacity-5" 
+                    <div className="absolute inset-0 -z-10 opacity-10" 
                     style={{backgroundImage: `url(${grainImage.src})`
                     }}> 
                     </div>
-
 
                     <div className="lg:grid lg:grid-cols-2 lg:gap-16"> 
                      <div className="lg:pb-16">
@@ -78,11 +73,11 @@ export const ProjectsSection = () => {
                         </div>  
 
 
-                    <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
+                    <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl ">{project.title}</h3>
                     <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                     <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                       {project.results.map((result, index) => (
-                        <li key={index} className="flex gap-2 text-sm md:text-base text-white/50">
+                        <li key={index} className="flex gap-2 text-sm md:text-base text-white/70">
                           <CheckCircleIcon className="size-5 md:size-6" />
                           <span>{result.title}</span>
                         </li>
