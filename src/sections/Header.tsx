@@ -50,6 +50,7 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
+
     
 <div className="navbar-container">
   <nav className="navbar">
