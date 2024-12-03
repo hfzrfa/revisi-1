@@ -50,24 +50,48 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="flex justify-center items-center fixed top-3 left-0 right-0 z-50">
-      <nav className="flex gap-1 mx-auto p-0.5 border animate-borderPulse hover:bg-emerald-800 transition rounded-full bg-white/10 backdrop-blur ">
-        <a href="#" className="nav-item text-white hover:text-gray-300">
-          <RiHome3Line size={30} />
-        </a>
-        <a href="#" className="nav-item text-white hover:text-gray-300">
-          <MdEmojiPeople size={30} />
-        </a>
-        <a href="#" className="nav-item text-white hover:text-gray-300">
-          <MdOutlineWorkOutline size={30} />
-        </a>
-        <a href="#" className="nav-item text-white hover:text-gray-300">
-          <RiContactsBook3Line size={30} />
-        </a>
-        <a href="#" className="nav-item text-white hover:text-gray-300">
-          <GrArticle size={30} />
-        </a>
-      </nav>
-    </div>
+    
+<div className="navbar-container">
+  <nav className="navbar">
+    <a href="#" className="nav-item">
+    <RiHome3Line size={30} />
+    </a>
+    <a href="#" className="nav-item">
+    <MdEmojiPeople size={30} />
+    </a>
+    <a href="#" className="nav-item">
+    <MdOutlineWorkOutline size={30} />
+    </a>
+    <a href="#" className="nav-item">
+    <RiContactsBook3Line size={30} />
+    </a>
+    <a href="#" className="nav-item">
+    <GrArticle size={30} />
+    </a>
+  </nav>
+</div>
+
+/* <div className="flex justify-center items-center fixed top-3 left-0 right-0 z-50">
+<nav className="flex gap-1 mx-auto p-0.5 border animate-borderPulse hover:bg-emerald-800 transition rounded-full bg-white/10 backdrop-blur ">
+  <a href="#" className="nav-item text-white hover:text-gray-300">
+    <RiHome3Line size={30} />
+  </a>
+  <a href="#" className="nav-item text-white hover:text-gray-300">
+    <MdEmojiPeople size={30} />
+  </a>
+  <a href="#" className="nav-item text-white hover:text-gray-300">
+    <MdOutlineWorkOutline size={30} />
+  </a>
+  <a href="#" className="nav-item text-white hover:text-gray-300">
+    <RiContactsBook3Line size={30} />
+  </a>
+  <a href="#" className="nav-item text-white hover:text-gray-300">
+    <GrArticle size={30} />
+  </a>
+</nav>
+</div>
+ */
+
+
   );
 };
